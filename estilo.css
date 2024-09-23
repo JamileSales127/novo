@@ -26,6 +26,51 @@ p {
     font-size: 1.1em;
 }
 
+audio {
+    width: 100%; /* Para ocupar toda a largura disponível */
+    margin: 20px 0; /* Espaçamento acima e abaixo */
+    border-radius: 5px; /* Arredondar os cantos */
+}
+
+.custom-audio-player {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffb6c1; /* Cor de fundo */
+    border-radius: 5px; /* Bordas arredondadas */
+    padding: 10px; /* Espaçamento */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+#playPauseBtn {
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #d147a3; /* Cor do botão */
+    transition: transform 0.3s;
+}
+
+#playPauseBtn:hover {
+    transform: scale(1.1); /* Efeito de hover */
+}
+
+.progress-container {
+    flex-grow: 1;
+    height: 5px;
+    background-color: #ddd;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+
+#progressBar {
+    height: 100%;
+    background-color: #d147a3; /* Cor da barra de progresso */
+    width: 0; /* Inicialmente 0% */
+    border-radius: 5px;
+}
+
+
 /* Estilo da linha do tempo */
 .timeline {
     margin: 40px auto;

@@ -1,0 +1,181 @@
+/* Estilos gerais */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fff0f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-color: #ffb6c1;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-family: 'Bubblegum', sans-serif;
+    color: #d147a3;
+    font-size: 2.5em;
+    margin: 0;
+}
+
+p {
+    color: #666;
+    font-size: 1.1em;
+}
+
+/* Estilo da linha do tempo */
+.timeline {
+    margin: 40px auto;
+    max-width: 900px;
+    text-align: left;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.timeline h2 {
+    color: #d147a3;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.timeline-item {
+    background-color: #ffe6f2;
+    border: 1px solid #ffb3d9;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-item h3 {
+    color: #cc0073;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+.timeline-item p {
+    color: #555;
+    font-size: 1.1em;
+}
+
+.timeline-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+/* Botão surpresa */
+.surprise-section {
+    margin: 40px 0;
+}
+
+#surpriseButton {
+    background-color: #d147a3;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#surpriseButton:hover {
+    background-color: #b3318e;
+}
+
+#surpriseMessage {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #d147a3;
+}
+
+/* Container de imagem para alinhamento */
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espaçamento entre as imagens */
+    margin-top: 10px;
+}
+
+/* Ajustes para imagens da linha do tempo */
+.timeline-img {
+    width: 250px; /* Tamanho fixo para manter as imagens proporcionais */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para dar destaque */
+}
+
+/* Media queries para responsividade */
+
+/* Ajustes para tablets e telas menores */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+    
+    .timeline {
+        padding: 10px;
+    }
+
+    .timeline-item {
+        padding: 10px;
+        margin: 15px 0;
+    }
+
+    .timeline-item h3 {
+        font-size: 1.2em;
+    }
+
+    .timeline-item p {
+        font-size: 1em;
+    }
+
+    .timeline-img {
+        width: 200px;
+    }
+
+    #surpriseButton {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+}
+
+/* Ajustes para telas de celulares */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8em;
+    }
+
+    .timeline {
+        padding: 5px;
+    }
+
+    .timeline-item {
+        padding: 8px;
+        margin: 10px 0;
+    }
+
+    .timeline-item h3 {
+        font-size: 1.1em;
+    }
+
+    .timeline-item p {
+        font-size: 0.95em;
+    }
+
+    .timeline-img {
+        width: 100%;
+    }
+
+    #surpriseButton {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+}

@@ -63,11 +63,20 @@ p {
     font-size: 1.1em;
 }
 
-.timeline-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
+/* Container de imagem para alinhamento */
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Espaçamento entre as imagens */
     margin-top: 10px;
+    flex-wrap: wrap; /* Permite que as imagens se ajustem em múltiplas linhas */
+}
+
+/* Ajustes para imagens da linha do tempo */
+.timeline-img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do container */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 8px;
 }
 
 /* Botão surpresa */
@@ -96,22 +105,6 @@ p {
     color: #d147a3;
 }
 
-/* Container de imagem para alinhamento */
-.image-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px; /* Espaçamento entre as imagens */
-    margin-top: 10px;
-}
-
-/* Ajustes para imagens da linha do tempo */
-.timeline-img {
-    width: 250px; /* Tamanho fixo para manter as imagens proporcionais */
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para dar destaque */
-}
-
 /* Media queries para responsividade */
 
 /* Ajustes para tablets e telas menores */
@@ -135,10 +128,6 @@ p {
 
     .timeline-item p {
         font-size: 1em;
-    }
-
-    .timeline-img {
-        width: 200px;
     }
 
     #surpriseButton {
@@ -168,13 +157,6 @@ p {
 
     .timeline-item p {
         font-size: 0.95em;
-    }
-
-    .timeline-img {
-        width: 100%; /* Ajusta a largura para 100% em telas menores */
-        height: auto; /* Mantém a proporção da imagem */
-        margin-bottom: 15px; /* Espaçamento entre imagens e texto */
-        border-radius: 8px; /* Mantém o arredondamento */
     }
 
     #surpriseButton {
